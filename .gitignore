@@ -1,0 +1,32 @@
+﻿# Build artifacts and generated outputs
+bin/
+output/
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.exp
+
+# Python and local environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+
+# Local generated input data
+data/*.csv
+data/*.bin
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Never publish proprietary or production-related files
+*lppl*
+*bubble*
+*mega_wyniki*
+*Dane_Long*

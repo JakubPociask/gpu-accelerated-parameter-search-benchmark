@@ -1,0 +1,32 @@
+metric,value
+benchmark_schema_version,1.2
+gpu_device_name,NVIDIA GeForce GTX 1660 Ti
+gpu_compute_capability,7.5
+series_count,5
+points_per_series,480
+grid_steps_per_parameter,56
+candidates_per_series,175616
+total_candidates,878080
+topk_per_series,64
+gpu_timing_repeats,25
+gpu_fast_stage_scope,paired-repetition CUDA-event timing: device kernel plus CUB segmented sort; excludes transfers and setup
+gpu_fast_stage_device_min_seconds,0.00357011198997
+gpu_fast_stage_device_median_seconds,0.00361948800087
+gpu_fast_stage_device_max_seconds,0.00362291193008
+gpu_pipeline_scope,paired-repetition host-wall timing with reused buffers: H2D input plus the same fast stage plus Top-K D2H; excludes allocations refinement and file output
+gpu_pipeline_wall_min_seconds,0.0044095
+gpu_pipeline_wall_median_seconds,0.0044785
+gpu_pipeline_wall_max_seconds,0.0046675
+cpu_reference_mode,single_thread full-grid; excludes refinement and file output
+cpu_timing_repeats,5
+cpu_full_grid_min_seconds,2.2437724
+cpu_full_grid_median_seconds,2.3238225
+cpu_full_grid_max_seconds,2.379365
+cpu_over_gpu_fast_stage_median_speedup,642.030723528
+cpu_over_gpu_pipeline_median_speedup,518.884112984
+best_mse_abs_diff_0,5.06406649947e-09
+best_mse_abs_diff_1,9.89530235529e-10
+best_mse_abs_diff_2,1.57160684466e-09
+best_mse_abs_diff_3,1.10594555736e-09
+best_mse_abs_diff_4,5.82076609135e-11
+validation_max_best_mse_abs_diff,5.06406649947e-09

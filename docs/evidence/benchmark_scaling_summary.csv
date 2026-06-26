@@ -1,0 +1,4 @@
+source,grid_steps,total_candidates,gpu_fast_stage_device_median_seconds,gpu_pipeline_wall_median_seconds,cpu_full_grid_median_seconds,cpu_over_gpu_fast_stage_median_speedup,cpu_over_gpu_pipeline_median_speedup,validation_max_best_mse_abs_diff,gpu_device_name,gpu_compute_capability
+output\scaling\grid_40\benchmark.csv,40,320000,0.00138444805145,0.0020626,0.8222868,593.94557935,398.66517987,1.62981450558e-09,NVIDIA GeForce GTX 1660 Ti,7.5
+output\benchmark.csv,56,878080,0.00361948800087,0.0044785,2.3238225,642.030723528,518.884112984,5.06406649947e-09,NVIDIA GeForce GTX 1660 Ti,7.5
+output\scaling\grid_72\benchmark.csv,72,1866240,0.0075735039711,0.008444,4.7635874,628.980643329,564.138725722,1.16415321827e-09,NVIDIA GeForce GTX 1660 Ti,7.5
