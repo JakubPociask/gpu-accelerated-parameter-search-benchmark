@@ -1,6 +1,6 @@
 # GPU Batch Optimization Engine
 
-A neutral CUDA portfolio demo for nonlinear parameter search and calibration.
+A portfolio case study and benchmark evidence package for GPU-accelerated nonlinear parameter search and calibration.
 
 ## What it demonstrates
 
@@ -8,7 +8,7 @@ A neutral CUDA portfolio demo for nonlinear parameter search and calibration.
 - Segmented Top-K selection with CUB
 - CPU refinement of shortlisted candidates
 - Reproducible CPU-vs-GPU benchmark reporting
-- CSV outputs and figure generation
+- Structured benchmark evidence, CSV outputs and figures
 
 The repository uses deterministic synthetic curves. It does not include proprietary financial models, production code, or private data.
 
@@ -19,7 +19,7 @@ The repository uses deterministic synthetic curves. It does not include propriet
 - Build target: `sm_75`
 - Dataset: 5 synthetic series x 480 observations
 - Timing protocol: 25 GPU repetitions and 5 CPU repetitions after warm-up; medians reported
-- CPU reference: included single-thread full-grid implementation
+- CPU reference: single-thread full-grid implementation used for the benchmark
 
 ## Results
 
@@ -37,12 +37,11 @@ Across the three benchmark scales, the maximum absolute difference between the C
 
 The fast stage screens the entire grid on the GPU. The CPU then refines shortlisted candidates. Across the five synthetic series, refinement reduced MSE by an average of 15.6%. In one series, the best refined solution originated from fast rank 1 rather than rank 0, which is why retaining a Top-K set is more robust than trusting one grid point.
 
-## Reproduce
+## Technical demo availability
 
-```powershell
-python -m pip install -r requirements.txt
-powershell -ExecutionPolicy Bypass -File .\run_portfolio_benchmark.ps1 -CpuRepeats 5 -GpuRepeats 25
-```
+This public repository intentionally contains benchmark evidence, methodology, figures and sample outputs only.
+
+The runnable source code, build scripts and executable binaries are not distributed publicly. A live technical walkthrough and runnable demonstration can be reviewed privately with qualified clients during a project discussion or paid discovery phase.
 
 ## Notes
 
@@ -50,7 +49,7 @@ Performance depends on hardware, compiler, model complexity, data layout, and wo
 
 ## Copyright and use
 
-Copyright Â© 2026 Jakub Pociask. All rights reserved.
+Copyright (c) 2026 Jakub Pociask. All rights reserved.
 
 This repository is shared for portfolio and evaluation purposes. Commercial reuse, redistribution, modification, or incorporation into another product requires prior written permission. See [COPYRIGHT_AND_USE.md](COPYRIGHT_AND_USE.md).
 
