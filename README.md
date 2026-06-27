@@ -58,4 +58,3 @@ This repository is shared for portfolio and evaluation purposes. Commercial reus
 For private technical demos, commercial licensing, consulting, or GPU-accelerated numerical optimization projects:
 
 **Jakub Pociask**
-Email: jakub_pociask@o2.pl
